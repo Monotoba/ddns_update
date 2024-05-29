@@ -30,9 +30,9 @@ python update_ddns.py
    ```bash
    crontab -e
    ```
-2. Add a cron job to run the script at a desired interval (e.g., daily at 3 AM):
+2. Add a cron job to run the script at a desired interval (e.g., Every 15 minutes):
    ```bash
-   0 3 * * * /usr/bin/python3 /path/to/update_ddns.py
+   */15 * * * * /usr/bin/python3 /path/to/update_ddns.py
    ```
 3. Save and exit the editor.
 
